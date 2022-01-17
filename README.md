@@ -1,6 +1,6 @@
 1. Ammend the file publish profile "Database.Ensek.publish" to use your local computer name of the sql server database, there are only 2 tables added).
 
-2. Publish the database.
+2. Change the Database Project settings -> change Target Platform (if need be to your version of sql sql server) and Publish the database.
 
 3. Run the WebApp project.
 
