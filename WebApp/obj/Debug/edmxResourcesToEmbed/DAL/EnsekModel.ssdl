@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ensek_TestModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Meter_Readings">
+    <Key>
+      <PropertyRef Name="AccountId" />
+      <PropertyRef Name="MeterReadingDateTime" />
+    </Key>
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="MeterReadingDateTime" Type="datetime2" Precision="7" Nullable="false" />
+    <Property Name="MeterReadValue" Type="float" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Test_Accounts">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="AccountId" Type="int" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Meter_Rea__Accou__2D27B809">
+    <End Role="Test_Accounts" Type="Self.Test_Accounts" Multiplicity="1" />
+    <End Role="Meter_Readings" Type="Self.Meter_Readings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Test_Accounts">
+        <PropertyRef Name="AccountId" />
+      </Principal>
+      <Dependent Role="Meter_Readings">
+        <PropertyRef Name="AccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Ensek_TestModelStoreContainer">
+    <EntitySet Name="Meter_Readings" EntityType="Self.Meter_Readings" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Test_Accounts" EntityType="Self.Test_Accounts" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Meter_Rea__Accou__2D27B809" Association="Self.FK__Meter_Rea__Accou__2D27B809">
+      <End Role="Test_Accounts" EntitySet="Test_Accounts" />
+      <End Role="Meter_Readings" EntitySet="Meter_Readings" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

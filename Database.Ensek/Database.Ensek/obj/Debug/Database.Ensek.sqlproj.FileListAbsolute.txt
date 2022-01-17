@@ -1,0 +1,10 @@
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\bin\Debug\Database.Ensek.dacpac
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\bin\Debug\Database.Ensek.dll
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\bin\Debug\Database.Ensek.pdb
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\obj\Debug\Database.Ensek.dll
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\obj\Debug\Database.Ensek.pdb
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\obj\Debug\Database.Ensek.sqlprojAssemblyReference.cache
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\obj\Debug\Model.xml
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\obj\Debug\refactor.xml
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\obj\Debug\postdeploy.sql
+C:\Users\sha01869\source\repos\Ensek\Database.Ensek\Database.Ensek\obj\Debug\predeploy.sql

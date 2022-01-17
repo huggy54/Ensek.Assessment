@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1738
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database.Ensek", "Database.Ensek\Database.Ensek\Database.Ensek.sqlproj", "{5A940FBF-FAFD-44D2-9BFA-0F10648F385C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{CCE8536D-08CB-4EF5-8E90-CE58EDFA06A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A940FBF-FAFD-44D2-9BFA-0F10648F385C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A940FBF-FAFD-44D2-9BFA-0F10648F385C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A940FBF-FAFD-44D2-9BFA-0F10648F385C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5A940FBF-FAFD-44D2-9BFA-0F10648F385C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A940FBF-FAFD-44D2-9BFA-0F10648F385C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A940FBF-FAFD-44D2-9BFA-0F10648F385C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{CCE8536D-08CB-4EF5-8E90-CE58EDFA06A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CCE8536D-08CB-4EF5-8E90-CE58EDFA06A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CCE8536D-08CB-4EF5-8E90-CE58EDFA06A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CCE8536D-08CB-4EF5-8E90-CE58EDFA06A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73AF64A8-2BE2-4FC3-BE5B-15C9F1F0E694}
+	EndGlobalSection
+EndGlobal

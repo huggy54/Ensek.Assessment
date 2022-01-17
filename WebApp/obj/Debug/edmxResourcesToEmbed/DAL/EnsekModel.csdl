@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Ensek_TestModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Ensek_TestEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Meter_Readings" EntityType="Ensek_TestModel.Meter_Readings" />
+    <EntitySet Name="Test_Accounts" EntityType="Ensek_TestModel.Test_Accounts" />
+    <AssociationSet Name="FK__Meter_Rea__Accou__2D27B809" Association="Ensek_TestModel.FK__Meter_Rea__Accou__2D27B809">
+      <End Role="Test_Accounts" EntitySet="Test_Accounts" />
+      <End Role="Meter_Readings" EntitySet="Meter_Readings" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Meter_Readings">
+    <Key>
+      <PropertyRef Name="AccountId" />
+      <PropertyRef Name="MeterReadingDateTime" />
+    </Key>
+    <Property Name="AccountId" Type="Int32" Nullable="false" />
+    <Property Name="MeterReadingDateTime" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="MeterReadValue" Type="Double" Nullable="false" />
+    <NavigationProperty Name="Test_Accounts" Relationship="Ensek_TestModel.FK__Meter_Rea__Accou__2D27B809" FromRole="Meter_Readings" ToRole="Test_Accounts" />
+  </EntityType>
+  <EntityType Name="Test_Accounts">
+    <Key>
+      <PropertyRef Name="AccountId" />
+    </Key>
+    <Property Name="AccountId" Type="Int32" Nullable="false" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Meter_Readings" Relationship="Ensek_TestModel.FK__Meter_Rea__Accou__2D27B809" FromRole="Test_Accounts" ToRole="Meter_Readings" />
+  </EntityType>
+  <Association Name="FK__Meter_Rea__Accou__2D27B809">
+    <End Type="Ensek_TestModel.Test_Accounts" Role="Test_Accounts" Multiplicity="1" />
+    <End Type="Ensek_TestModel.Meter_Readings" Role="Meter_Readings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Test_Accounts">
+        <PropertyRef Name="AccountId" />
+      </Principal>
+      <Dependent Role="Meter_Readings">
+        <PropertyRef Name="AccountId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Ensek_TestModelStoreContainer" CdmEntityContainer="Ensek_TestEntities">
+    <EntitySetMapping Name="Meter_Readings">
+      <EntityTypeMapping TypeName="Ensek_TestModel.Meter_Readings">
+        <MappingFragment StoreEntitySet="Meter_Readings">
+          <ScalarProperty Name="MeterReadValue" ColumnName="MeterReadValue" />
+          <ScalarProperty Name="MeterReadingDateTime" ColumnName="MeterReadingDateTime" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Test_Accounts">
+      <EntityTypeMapping TypeName="Ensek_TestModel.Test_Accounts">
+        <MappingFragment StoreEntitySet="Test_Accounts">
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

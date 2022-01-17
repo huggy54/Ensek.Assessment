@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Meter_Readings]
+       [dbo].[Test_Accounts]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       [dbo].[Meter_Readings].[IX_MeterReading_AccountId] (Index)
+     Table rebuild
+       [dbo].[Meter_Readings] (Table)
+       [dbo].[Test_Accounts] (Table)
+     Create
+       Foreign Key: unnamed constraint on [dbo].[Meter_Readings] (Foreign Key)
+
+** Supporting actions
